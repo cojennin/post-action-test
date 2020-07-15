@@ -16,7 +16,7 @@ try {
     return;
   }
 
-  fetch('https://postman-echo.com/post', { method: 'POST', body: 'hello world' })
+  fetch(body, { method: 'POST', body: 'hello world' })
     .then(res => res.text()) // expecting a text response
     .then(text => console.log(`Postman resp: ${text}`));
 
